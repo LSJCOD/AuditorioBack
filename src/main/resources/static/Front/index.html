@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!--JavaScrip-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/Funciones.js"></script>
+    <!--Css-->
+    <link type="text/css" href="css/Style.css" rel="stylesheet">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <title>MasterTech</title>
+</head>
+
+<body>
+<!--Cabezote de Navegacion-->
+<nav class="navbar navbar-expand-sm navbar-dark bg-primary">
+    <a class="navbar-brand" href="#">MasterTech Grupo35 Sub 2</a>
+    <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Toggle navigation"></button>
+    <div class="collapse navbar-collapse" id="collapsibleNavId">
+        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+            <li class="nav-item active">
+                <a class="nav-link" href="index.html">Audience<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Category.html">Category<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Client.html">Client<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Reservation.html">Reservation<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="Message.html">Message<span class="sr-only">(current)</span></a>
+            </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-secondary" type="submit">Search</button>
+            <button class="btn btn-dark" data-bs-toggle="modal"
+                    data-bs-target="#exampleModal" >Loguin</button>
+        </form>
+    </div>
+    <br>
+</nav>
+
+<!--Carrusel de servicios-->
+<div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <img src="img/Sala%20Proyectos.jfif" class="d-block w-20" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Auditorio Principal</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Amet dictum sit amet justo donec enim diam vulputate. Enim sed faucibus
+                    turpis in eu mi. Nibh cras pulvinar mattis nunc sed blandit libero. Cras tincidunt lobortis feugiat
+                    vivamus at augue eget arcu.</p>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <img src="img/Sala%20Capacitacion.jfif" class="d-block w-20" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Auditorio Capacitacion</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Amet dictum sit amet justo donec enim diam vulputate. Enim sed faucibus
+                    turpis in eu mi. Nibh cras pulvinar mattis nunc sed blandit libero. Cras tincidunt lobortis feugiat
+                    vivamus at augue eget arcu.</p>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="img/Sala%20Amarilla.jfif" class="d-block w-20" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+                <h5>Auditorio Principal</h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna aliqua. Amet dictum sit amet justo donec enim diam vulputate. Enim sed faucibus
+                    turpis in eu mi. Nibh cras pulvinar mattis nunc sed blandit libero. Cras tincidunt lobortis feugiat
+                    vivamus at augue eget arcu.</p>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<!--Formularios-->
+<div id="top">
+    <ul>
+        <li>
+            <!--Category-->
+            <form class="Form">
+                <div class="mb-3">
+                    <p class="h2">Category</p>
+                    <label for="Cname" class="form-label">Name</label>
+                    <input type="text" id="Cname" placeholder="name" class="form-control" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="Cdescription" class="form-label">Description</label>
+                    <input type="text" id="Cdescription" placeholder="description" class="form-control"
+                           required="required">
+                </div>
+                <button onclick="traerInformacionCategorias()" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Consultar Category</button>
+                <button onclick="guardarInformacionCategorias()" class="btn btn-primary">Agregar Category</button>
+            </form>
+        </li>
+        <li>
+            <!--Auditory-->
+            <form class="Form">
+                <div class="mb-3">
+                    <p class="h2">Auditory</p>
+                    <label for="Bname" class="form-label">Name</label>
+                    <input type="text" id="Bname" placeholder="name" class="form-control" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="Bowner" class="form-label">Owner</label>
+                    <input type="text" id="Bowner" placeholder="owner" class="form-control" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="Bcapacity" class="form-label">Capacity</label>
+                    <input type="number" id="Bcapacity" placeholder="capacity" class="form-control" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="Bdescription" class="form-label">Description</label>
+                    <input type="text" id="Bdescription" placeholder="description" class="form-control"
+                           required="required">
+                </div>
+                <button onclick="traerInformacionAudience()" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Consultar Audience</button>
+                <button onclick="guardarInformacionAudience()" class="btn btn-primary">Agregar Audience</button>
+            </form>
+        </li>
+        <li>
+            <!--Client-->
+            <form class="Form">
+                <div class="mb-3">
+                    <p class="h2">Client</p>
+                    <label for="CLemail" class="form-label">Email</label>
+                    <input type="text" id="CLemail" placeholder="email" class="form-control" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="CLpassword" class="form-label">Password</label>
+                    <input type="text" id="CLpassword" placeholder="password" class="form-control" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="CLname" class="form-label">Name</label>
+                    <input type="text" id="CLname" placeholder="name" class="form-control" required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="CLage" class="form-label">Age</label>
+                    <input type="number" id="CLage" placeholder="age" class="form-control" required="required">
+                </div>
+                <button onclick="traerInformacionClientes()" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Consultar Clientes</button>
+                <button onclick="guardarInformacionClientes()" class="btn btn-primary">Agregar Clientes</button>
+            </form>
+        </li>
+        <li>
+            <!--Reservation-->
+            <form class="Form">
+                <div class="mb-3">
+                    <p class="h2">Reservation</p>
+                    <label for="RstartDate" class="form-label">StartDate</label>
+                    <input type="datetime-local" id="RstartDate" placeholder="startDate" class="form-control"
+                           required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="RdevolutionDate" class="form-label">DevolutionDate</label>
+                    <input type="datetime-local" id="RdevolutionDate" placeholder="devolutionDate" class="form-control"
+                           required="required">
+                </div>
+                <div class="mb-3">
+                    <label for="Rcreated" class="form-label">Created</label>
+                    <input type="text" id="Rcreated" placeholder="created" class="form-control">
+                </div>
+                <button onclick="traerInformacionReservaciones()" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Consultar Reservaciones</button>
+                <button onclick="guardarInformacionReservaciones()" class="btn btn-primary">Agregar Reservaciones
+                </button>
+            </form>
+        </li>
+        <li>
+            <!--Message-->
+            <form class="Form">
+                <div class="mb-3">
+                    <p class="h2">Message</p>
+                    <label for="messageText" class="form-label">Message</label>
+                    <input id="messageText" placeholder="messageText" class="form-control" required="required">
+                </div>
+                <button onclick="traerInformacionMensajes()" class="btn btn-primary" data-bs-toggle="modal"
+                        data-bs-target="#exampleModal">Consultar Mensajes</button>
+                <button onclick="guardarInformacionMensajes()" class="btn btn-primary">Agregar Mensajes</button>
+            </form>
+        </li>
+    </ul>
+</div>
+
+
+
+<!-- Modal Consultas -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Tabla Resultados</h5>
+            </div>
+            <div class="modal-body">
+                <div CLASS="Tabla">
+                    <br>
+                    <div class="Tables">
+                        <table class="table table-striped table-hover">
+                            <tbody style="border: white solid 1px" id="resultado"/>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Optional JavaScript -->
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+<!---Inicia Pie de Pagina --->
+<footer>
+    &copy;Todos los derechos reservados Libardo Salamanca Jimenez.
+    <br><i class="bi bi-github" href="https://github.com/signup?ref_cta=Sign+up&ref_loc=header+logged+out&ref_page=%2F&source=header-home">GitHub</i>
+</footer>
+</html>
+
+
+
+
+

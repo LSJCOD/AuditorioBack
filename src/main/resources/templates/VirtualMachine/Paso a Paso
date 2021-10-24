@@ -1,0 +1,133 @@
+git remote add origin https://github.com/LSJCOD/AuditorioBack.git
+rm -rf nombrecarpeta   ---> Borrar Carpeta
+sudo pkill java --> Mata los procesos en Java
+
+sudo java -jar -Dspring.profiles.active=prod Auditorio-0.0.1-SNAPSHOT.jar & -->Maquina Siempre Activa
+java -Dspring.profiles.active=perfil -jar Auditorio-0.0.1-SNAPSHOT.jar &   -->Maquina Siempre Activa
+
+
+
+/////////////////Comandos Cargar el Git//////////////////
+
+git init
+git add .
+git commit -m "first commit"
+git remote add origin https://github.com/LSJCOD/AuditorioBack.git   ---> La URL puede cambiar  ->>Back
+git remote add origin https://github.com/LSJCOD/FrontAudience.git   ---> La URL puede cambiar  ->>Front
+git push -u origin master
+
+//////////////////Comandos Virtual Machine//////////////
+
+
+<--Configuracion de la Maquina Viertual-->
+
+
+ssh -i ssh-key-2021-10-17.key opc@150.136.4.139  ---> IpPublica
+sudo yum install git
+sudo yum install java-11-openjdk-devel
+sudo yum-config-manager --add-repo http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo
+sudo yum-config-manager --enable epel-apache-maven
+sudo yum install -y apache-maven
+sudo alternatives --config java  --->Se selecciona el 1
+sudo alternatives --config javac --->Se selecciona el 1
+
+
+<-- Clonar Repositorio de Git que contiene el Backend y Habilitacion Puesto (Ejecucion) -->
+
+Ls -> Entar a la carpeta
+git clone https://github.com/LSJCOD/Audience.git
+Ls -> Ingresar a la carpeta
+Cd ->Ingresar a la carpeta
+mvn clean package -DskipTests  ---> Crea el Target
+cd target/
+sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent
+sudo firewall-cmd --reload
+
+java -jar Ret***.jar
+
+
+
+///Prueba del Backend///
+
+http:150.136.4.139:8080/api/Category/all
+
+
+POST = URL
+http:150.136.4.139:8080/api/Category/save
+Body-raw-Json
+
+{
+    "name":"cat1",
+    "description":"test category"
+}
+
+
+Prueba MasterTech:
+
+http://150.136.4.139:8080
+
+
+
+///////////Configuracion del Frontend ///////////
+
+
+
+Dentro de la Raiz
+
+sudo yum install -y httpd
+sudo systemctl enable httpd
+sudo systemctl restart httpd
+sudo firewall-cmd --add-service=http --permanent
+sudo firewall-cmd --reload
+cd /var/www/
+sudo chmod 777 html
+cd html
+git clone https://github.com/LSJCOD/AuditorioBack.git
+
+
+Prueba Mave:
+
+http://150.136.4.139
+
+Ingresar al Fronted
+
+http://150.136.4.139/FrontAudience/
+
+
+
+////Rutas de Prueba///
+
+http://localhost:8080/api/Category/all
+http://localhost:8080/api/Category/save
+
+
+http://localhost:8080/api/Audience/all
+http://localhost:8080/api/Audience/save
+
+http://localhost:8080/api/Client/all
+http://localhost:8080/api/Client/save
+
+http://localhost:8080/api/Message/all
+http://localhost:8080/api/Message/save
+
+http://localhost:8080/api/Reservation/all
+http://localhost:8080/api/Reservation/save
+
+
+
+http://150.136.4.139:8080/api/Category/all
+http://150.136.4.139:8080/api/Category/save
+
+
+http://150.136.4.139:8080/api/Audience/all
+http://150.136.4.139:8080/api/Audience/save
+
+http://150.136.4.139:8080/api/Client/all
+http://150.136.4.139:8080/api/Client/save
+
+http://150.136.4.139:8080/api/Message/all
+http://150.136.4.139:8080/api/Message/save
+
+http://150.136.4.139:8080/api/Reservation/all
+http://150.136.4.139:8080/api/Reservation/save
+
