@@ -20,9 +20,8 @@ git push -u origin master
 
 
 <--Configuracion de la Maquina Viertual-->
-
-
-ssh -i ssh-key-2021-10-17.key opc@150.136.4.139  ---> IpPublica
+chmod 400 ssh-key-2021-10-24.key
+ssh -i ssh-key-2021-10-24.key opc@150.136.4.139  ---> IpPublica
 sudo yum install git
 sudo yum install java-11-openjdk-devel
 sudo yum-config-manager --add-repo http://repos.fedorapeople.org/repos/dchen/apache-maven/epel-apache-maven.repo
@@ -43,7 +42,7 @@ cd target/
 sudo firewall-cmd --zone=public --add-port=8080/tcp --permanent
 sudo firewall-cmd --reload
 
-java -jar Ret***.jar
+java -jar Auditorios-0.0.1-SNAPSHOT.jar
 
 
 
