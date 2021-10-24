@@ -35,7 +35,7 @@ sudo alternatives --config javac --->Se selecciona el 1
 <-- Clonar Repositorio de Git que contiene el Backend y Habilitacion Puesto (Ejecucion) -->
 
 Ls -> Entar a la carpeta
-git clone https://github.com/LSJCOD/Audience.git
+git clone https://github.com/LSJCOD/AuditorioBack.git
 Ls -> Ingresar a la carpeta
 Cd ->Ingresar a la carpeta
 mvn clean package -DskipTests  ---> Crea el Target
